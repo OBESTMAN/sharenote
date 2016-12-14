@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ShareNote</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="password">Password</string>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:weightSum="1"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.android.sharenote.sharenote.Login">
+<!-- First Layout -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:id="@+id/firstLayout">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sharenote"
+        android:textColor="#005eff"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="30dp"
+        />
+    </RelativeLayout>
+
+    <!-- Second Layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.40"
+        android:id="@+id/secondLayout"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:background="#fff"
+            android:hint="@string/username_or_email"
+            android:id="@+id/username"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#fff"
+            android:textSize="15dp"
+            android:hint="@string/password"
+            android:id="@+id/password"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text= "Login"
+            android:textAllCaps="false"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="30dp"
+            android:id="@+id/loginbutton"/>
+    </RelativeLayout>
+
+    <!-- Third Layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.30"
+        android:id="@+id/thirdLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/forgot_password"
+            android:layout_marginTop="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/new_user"
+            android:text="New User"/>
+
+    </RelativeLayout>
+</LinearLayout>
